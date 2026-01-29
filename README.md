@@ -2,7 +2,7 @@
 Container(s) with (minimal) Desktop Environments
 
 ## Debian Mate VNC
-  Docker Image: [On the Hub](https://hub.docker.com/r/leogps/debian-mate-vnc)
+  On the Hub: [leogps/debian-mate-vnc:1.0.0](https://hub.docker.com/r/leogps/debian-mate-vnc)
 
     docker run -it --rm \
       -p 5901:5901 \

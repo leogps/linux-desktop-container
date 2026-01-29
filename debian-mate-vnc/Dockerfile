@@ -15,7 +15,7 @@ RUN mkdir -p /tmp/.X11-unix
 ENV DISPLAY=:0
 ENV XAUTHORITY=/tmp/.X11-unix
 
-COPY ./vnc-exec.sh /usr/local/bin/vnc-exec.sh
+COPY vnc-exec.sh /usr/local/bin/vnc-exec.sh
 
 EXPOSE 5901
 

@@ -27,6 +27,10 @@ Availble Options Using Environment variables:
 | `3389` | RDP Port    |
 | `5901` | VNC Port    |
 
+### Available commands inside the container
+
+    /usr/local/bin/remote.sh start|start-vnc|stop-vnc|restart-vnc|status-vnc|start-rdp|stop-rdp|restart-rdp|status-rdp
+
 ---
 
 ## Debian Mate VNC

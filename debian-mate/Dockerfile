@@ -30,8 +30,12 @@ COPY xrdp-exec.sh /usr/local/bin/xrdp-exec.sh
 COPY ./user_management.sh /usr/local/bin/user_management.sh
 COPY remote.sh /usr/local/bin/remote.sh
 
+RUN chmod 755 /usr/local/bin/vnc-exec.sh && \
+    chmod 755 /usr/local/bin/xrdp-exec.sh && \
+    chmod 755 /usr/local/bin/remote.sh
+
 EXPOSE 5901
 EXPOSE 3389
 
 # Default command to start the MATE session
-CMD ["/usr/local/bin/remote.sh"]
+CMD ["/usr/local/bin/remote.sh", "start"]
